@@ -11,7 +11,7 @@ public:
 	Thread() {
 		waitingTime = 0;
 		lastReadyTime = 0;
-		burstTime.push_back(1); //one time unit of burst
+		burstTime.push_back(std::numeric_limits<std::size_t>::max()); //one time unit of burst
 		needsIO = false;
 	}
 
